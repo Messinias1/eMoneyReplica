@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-.row {
-    max-width: 1200px;
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
     margin: auto;
 }
+
 header {
     position: relative;
     z-index: 9;
@@ -17,15 +20,17 @@ header {
     width: 200px;
     height: auto;
     float: left;
-    margin-top: 40px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+
 }
 
 .main-nav {
-    float:right;
+    margin-left: 40px;
+    float: right;
     list-style: none;
-    margin-top: 60px;
-
+    margin-top: 50px;
+    margin-right: 0px;
 }
 
 .main-nav li {
@@ -36,26 +41,81 @@ header {
     color: white;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    margin: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 14px;
     border: 1px solid transparent;
 }
 
 .main-nav li a:hover {
-     background-color: lightgrey;
-     border-radius: 5px;
+    background-color: solid transparent;
+    border-radius: 5px;
+}
+
+#header_search {
+   position: relative;
+   top: 20px;
+
+}
+
+.search {
+    text-align: right;
+    color: white;
+}
+
+#header_search input::placeholder {
+    color: white;
+}
+
+#s {
+    color: white;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 10px;
+    top: 0;
+    right: 100%;
+    height: 30px;
+    text-align: right;
+    letter-spacing: .1em;
+}
+
+#mg {
+    color: white;
+}
+
+.btn-orange {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: orange;
+    padding: 19px 15px;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    cursor: pointer;
+}
+
+.btn-orange:hover {
+    background-color: #fc9b1a;
+}
+
+#every {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #banner {
-position: relative;
-top: 0;
-width: 100%;
-min-height: 548px;
-text-align: center;
-background-size: cover;
-background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 548px;
+    text-align: center;
+    background-size: cover;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
 }
+
 #video_ct {
     position: absolute;
     top: 0;
@@ -71,5 +131,3 @@ background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     object-fit: cover;
 }
-
-
