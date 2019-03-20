@@ -131,3 +131,11 @@ header {
     height: 100%;
     object-fit: cover;
 }
+
+.hero {
+    border: 1px;
+    position: absolute;
+    width: 1200px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
